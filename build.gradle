@@ -61,10 +61,9 @@ repositories {
                        System.getenv("GITHUB_TOKEN")
         }
     }
-    // Swapped PaperMC for SpigotMC
+    // PaperMC Maven
     maven {
-        name = 'spigotmc'
-        url = 'https://hub.spigotmc.org/nexus/content/repositories/snapshots/'
+        url = 'https://repo.papermc.io/repository/maven-public/'
     }
     // Spigot API often relies on Sonatype for transitive dependencies (like bungeecord-chat)
     maven {
@@ -76,8 +75,8 @@ repositories {
 dependencies {
     // Adds MCExtension as a compile-time only dependency
     compileOnly 'io.github.mcengine:mcextension:2026.0.3-1-SNAPSHOT'
-    // Spigot API
-    compileOnly 'org.spigotmc:spigot-api:1.21.11-R0.2-SNAPSHOT'
+    // PaperMC API
+    compileOnly 'io.papermc.paper:paper-api:1.21.1-R0.1-SNAPSHOT'
 }
 
 def gitOwner = project.property('git-org-name')
