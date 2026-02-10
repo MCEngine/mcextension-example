@@ -24,6 +24,16 @@ This project targets:
 </dependency>
 ```
 
+And the **PaperMC API**:
+
+```xml
+<dependency>
+  <groupId>io.papermc.paper</groupId>
+  <artifactId>paper-api</artifactId>
+  <version>1.21.1-R0.1-SNAPSHOT</version>
+</dependency>
+```
+
 ## Project structure
 
 - `src/main/java/.../ExampleExtension.java`
