@@ -2,6 +2,6 @@
  * Extension Configuration
  */
 plugins {
-    id 'io.github.mcengine.extension.gradle'
+    id 'io.github.mcengine.extension.example.gradle'
 }
 
